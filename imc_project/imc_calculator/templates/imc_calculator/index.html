@@ -1,24 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de IMC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de IMC</title>
+<style>
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #f4f4f4;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+       }
+       .container {
+           background: white;
+           padding: 20px;
+           border-radius: 10px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           text-align: center;
+           width: 300px;
+       }
+       h2 {
+           color: #333;
+       }
+       label {
+           font-weight: bold;
+           display: block;
+           margin-top: 10px;
+       }
+       input {
+           width: 100%;
+           padding: 8px;
+           margin-top: 5px;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+       }
+       button {
+           margin-top: 15px;
+           background-color: #28a745;
+           color: white;
+           padding: 10px;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           width: 100%;
+           font-size: 16px;
+       }
+       button:hover {
+           background-color: #218838;
+       }
+       .result {
+           margin-top: 20px;
+           padding: 10px;
+           background: #dff0d8;
+           border: 1px solid #c3e6cb;
+           border-radius: 5px;
+       }
+</style>
 </head>
 <body>
-    <h2>Calculadora de IMC</h2>
-    <form method="post">
-        {% csrf_token %}
-        <label for="peso">Peso (kg):</label>
-        <input type="number" step="0.1" name="peso" required><br>
-        <label for="altura">Altura (m):</label>
-        <input type="number" step="0.01" name="altura" required><br>
-        <button type="submit">Calcular</button>
-    </form>
-
-    {% if imc %}
-        <h3>Seu IMC: {{ imc|floatformat:2 }}</h3>
-        <p>Classificação: {{ classificacao }}</p>
-    {% endif %}
+<div class="container">
+<h2>Calculadora de IMC</h2>
+<form method="post">
+           {% csrf_token %}
+<label for="peso">Peso (kg):</label>
+<input type="number" step="0.1" name="peso" required>
+<label for="altura">Altura (m):</label>
+<input type="number" step="0.01" name="altura" required>
+<button type="submit">Calcular</button>
+</form>
+       {% if imc %}
+<div class="result">
+<h3>Seu IMC: {{ imc|floatformat:2 }}</h3>
+<p>Classificação: {{ classificacao }}</p>
+</div>
+       {% endif %}
+</div>
 </body>
 </html>
