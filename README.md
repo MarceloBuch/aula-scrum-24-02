@@ -126,6 +126,9 @@ Faça um push para a branch (git push origin minha-melhoria).
 Abra um Pull Request.
 
 📜 Licença
+
 Este projeto está sob a licença MIT. Sinta-se livre para utilizá-lo e modificá-lo! 😊
+
 source venv/bin/activate
+
 venv\Scripts\activate
