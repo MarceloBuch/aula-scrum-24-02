@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <h2>Calculadora de IMC</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="peso">Peso (kg):</label>
+        <input type="number" step="0.1" name="peso" required><br>
+        <label for="altura">Altura (m):</label>
+        <input type="number" step="0.01" name="altura" required><br>
+        <button type="submit">Calcular</button>
+    </form>
+
+    {% if imc %}
+        <h3>Seu IMC: {{ imc|floatformat:2 }}</h3>
+        <p>Classificação: {{ classificacao }}</p>
+    {% endif %}
+</body>
+</html>
