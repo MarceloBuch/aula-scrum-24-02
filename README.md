@@ -18,6 +18,8 @@ O sistema também classifica o resultado do IMC, retornando uma das seguintes cl
 - Obesidade grau 2: IMC entre 35 e 39.9
 - Obesidade grau 3: IMC acima de 40
  
+Essas métricas vão de encontro com o sistema da OMS (Organização Mundial da Saúde), que utiliza o Índice de Massa Corporal (IMC) como um dos principais indicadores para avaliar o estado nutricional de um indivíduo.
+
 Suas funcionalidades:
  
 - Recebe o peso e a altura como entrada via formulário.
