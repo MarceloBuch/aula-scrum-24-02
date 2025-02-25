@@ -134,3 +134,7 @@ Este projeto está sob a licença MIT. Sinta-se livre para utilizá-lo e modific
 source venv/bin/activate
 
 venv\Scripts\activate
+
+
+Kauan Lacerda E Silva - 202412124
+
