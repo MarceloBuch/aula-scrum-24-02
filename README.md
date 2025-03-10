@@ -141,3 +141,16 @@ Kauan Lacerda E Silva - 202412124
 Renan Souza Borges - 202410864
 
 Enzo Nascimento Cabrera - 202320732
+
+Larissa Patrícia de Paula - 824129816
+
+Angel Marshall Ferreira dos Santos - 202410132
+
+João Vitor Mendes Da Silva - 202411713
+
+Luís Felipe Silva Vitor - 202322150
+
+Vinicius Torrez Figueiredo - 1262428439
+
+Marcelo Buchalowicz - 822161404
+
